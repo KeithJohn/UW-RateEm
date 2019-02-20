@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E81AC3E0D07252D9084F164 /* Pods_UW_RateEm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744DF7DF1A19D3620DCAB51F /* Pods_UW_RateEm.framework */; };
 		ADD764AE221DF0B800ED8B0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD764AD221DF0B800ED8B0D /* AppDelegate.swift */; };
 		ADD764B0221DF0B800ED8B0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD764AF221DF0B800ED8B0D /* ViewController.swift */; };
 		ADD764B3221DF0B800ED8B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD764B1221DF0B800ED8B0D /* Main.storyboard */; };
 		ADD764B5221DF0B900ED8B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD764B4221DF0B900ED8B0D /* Assets.xcassets */; };
 		ADD764B8221DF0B900ED8B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD764B6221DF0B900ED8B0D /* LaunchScreen.storyboard */; };
+		ADD764C6221DF83F00ED8B0D /* LoginMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD764C5221DF83F00ED8B0D /* LoginMenuViewController.swift */; };
+		ADD764C8221DF87600ED8B0D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD764C7221DF87600ED8B0D /* SignUpViewController.swift */; };
+		ADD764CA221DF8A500ED8B0D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD764C9221DF8A500ED8B0D /* SignInViewController.swift */; };
+		ADD764CC221DFE8E00ED8B0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADD764CB221DFE8E00ED8B0D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F77B8D481B213B82E2F07E /* Pods-UW-RateEm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UW-RateEm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UW-RateEm/Pods-UW-RateEm.debug.xcconfig"; sourceTree = "<group>"; };
+		392955D8426C92505DF25B23 /* Pods-UW-RateEm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UW-RateEm.release.xcconfig"; path = "Pods/Target Support Files/Pods-UW-RateEm/Pods-UW-RateEm.release.xcconfig"; sourceTree = "<group>"; };
+		744DF7DF1A19D3620DCAB51F /* Pods_UW_RateEm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UW_RateEm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD764AA221DF0B800ED8B0D /* UW-RateEm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UW-RateEm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD764AD221DF0B800ED8B0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD764AF221DF0B800ED8B0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		ADD764B4221DF0B900ED8B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD764B7221DF0B900ED8B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD764B9221DF0B900ED8B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD764C5221DF83F00ED8B0D /* LoginMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMenuViewController.swift; sourceTree = "<group>"; };
+		ADD764C7221DF87600ED8B0D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ADD764C9221DF8A500ED8B0D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		ADD764CB221DFE8E00ED8B0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E81AC3E0D07252D9084F164 /* Pods_UW_RateEm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D94BED75BC5A2D960124829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00F77B8D481B213B82E2F07E /* Pods-UW-RateEm.debug.xcconfig */,
+				392955D8426C92505DF25B23 /* Pods-UW-RateEm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5FBE3C7925C86AF36F29FCDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				744DF7DF1A19D3620DCAB51F /* Pods_UW_RateEm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADD764A1221DF0B800ED8B0D = {
 			isa = PBXGroup;
 			children = (
 				ADD764AC221DF0B800ED8B0D /* UW-RateEm */,
 				ADD764AB221DF0B800ED8B0D /* Products */,
+				2D94BED75BC5A2D960124829 /* Pods */,
+				5FBE3C7925C86AF36F29FCDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,42 @@
 		ADD764AC221DF0B800ED8B0D /* UW-RateEm */ = {
 			isa = PBXGroup;
 			children = (
+				ADD764C2221DF36000ED8B0D /* Model */,
+				ADD764C3221DF36900ED8B0D /* View */,
+				ADD764C4221DF37400ED8B0D /* Controller */,
 				ADD764AD221DF0B800ED8B0D /* AppDelegate.swift */,
 				ADD764AF221DF0B800ED8B0D /* ViewController.swift */,
 				ADD764B1221DF0B800ED8B0D /* Main.storyboard */,
 				ADD764B4221DF0B900ED8B0D /* Assets.xcassets */,
 				ADD764B6221DF0B900ED8B0D /* LaunchScreen.storyboard */,
 				ADD764B9221DF0B900ED8B0D /* Info.plist */,
+				ADD764CB221DFE8E00ED8B0D /* GoogleService-Info.plist */,
 			);
 			path = "UW-RateEm";
+			sourceTree = "<group>";
+		};
+		ADD764C2221DF36000ED8B0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADD764C3221DF36900ED8B0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADD764C4221DF37400ED8B0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADD764C5221DF83F00ED8B0D /* LoginMenuViewController.swift */,
+				ADD764C7221DF87600ED8B0D /* SignUpViewController.swift */,
+				ADD764C9221DF8A500ED8B0D /* SignInViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADD764BC221DF0B900ED8B0D /* Build configuration list for PBXNativeTarget "UW-RateEm" */;
 			buildPhases = (
+				3A36630C1357BAAD3CE40EC2 /* [CP] Check Pods Manifest.lock */,
 				ADD764A6221DF0B800ED8B0D /* Sources */,
 				ADD764A7221DF0B800ED8B0D /* Frameworks */,
 				ADD764A8221DF0B800ED8B0D /* Resources */,
+				DD24C0E525096F71B17F063E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD764B8221DF0B900ED8B0D /* LaunchScreen.storyboard in Resources */,
+				ADD764CC221DFE8E00ED8B0D /* GoogleService-Info.plist in Resources */,
 				ADD764B5221DF0B900ED8B0D /* Assets.xcassets in Resources */,
 				ADD764B3221DF0B800ED8B0D /* Main.storyboard in Resources */,
 			);
@@ -130,12 +193,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A36630C1357BAAD3CE40EC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UW-RateEm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD24C0E525096F71B17F063E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UW-RateEm/Pods-UW-RateEm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UW-RateEm/Pods-UW-RateEm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADD764A6221DF0B800ED8B0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD764C6221DF83F00ED8B0D /* LoginMenuViewController.swift in Sources */,
 				ADD764B0221DF0B800ED8B0D /* ViewController.swift in Sources */,
+				ADD764C8221DF87600ED8B0D /* SignUpViewController.swift in Sources */,
+				ADD764CA221DF8A500ED8B0D /* SignInViewController.swift in Sources */,
 				ADD764AE221DF0B800ED8B0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +399,7 @@
 		};
 		ADD764BD221DF0B900ED8B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F77B8D481B213B82E2F07E /* Pods-UW-RateEm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +418,7 @@
 		};
 		ADD764BE221DF0B900ED8B0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392955D8426C92505DF25B23 /* Pods-UW-RateEm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
