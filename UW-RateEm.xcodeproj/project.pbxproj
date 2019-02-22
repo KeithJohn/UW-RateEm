@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0E81AC3E0D07252D9084F164 /* Pods_UW_RateEm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744DF7DF1A19D3620DCAB51F /* Pods_UW_RateEm.framework */; };
+		AD0BE3CC221F180100A9010A /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BE3CB221F180100A9010A /* UserSettingsViewController.swift */; };
+		AD2F54DA221E18F5009001FC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F54D9221E18F5009001FC /* HomeScreenViewController.swift */; };
+		ADCCF48C221E297D00DE3A66 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCF48B221E297D00DE3A66 /* Assignment.swift */; };
+		ADCCF48E221E29EE00DE3A66 /* ClassInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCF48D221E29EE00DE3A66 /* ClassInfo.swift */; };
+		ADCCF490221E2A7D00DE3A66 /* Semester.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCF48F221E2A7D00DE3A66 /* Semester.swift */; };
 		ADD764AE221DF0B800ED8B0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD764AD221DF0B800ED8B0D /* AppDelegate.swift */; };
 		ADD764B0221DF0B800ED8B0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD764AF221DF0B800ED8B0D /* ViewController.swift */; };
 		ADD764B3221DF0B800ED8B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD764B1221DF0B800ED8B0D /* Main.storyboard */; };
@@ -23,6 +28,11 @@
 		00F77B8D481B213B82E2F07E /* Pods-UW-RateEm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UW-RateEm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UW-RateEm/Pods-UW-RateEm.debug.xcconfig"; sourceTree = "<group>"; };
 		392955D8426C92505DF25B23 /* Pods-UW-RateEm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UW-RateEm.release.xcconfig"; path = "Pods/Target Support Files/Pods-UW-RateEm/Pods-UW-RateEm.release.xcconfig"; sourceTree = "<group>"; };
 		744DF7DF1A19D3620DCAB51F /* Pods_UW_RateEm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UW_RateEm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0BE3CB221F180100A9010A /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
+		AD2F54D9221E18F5009001FC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		ADCCF48B221E297D00DE3A66 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		ADCCF48D221E29EE00DE3A66 /* ClassInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfo.swift; sourceTree = "<group>"; };
+		ADCCF48F221E2A7D00DE3A66 /* Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semester.swift; sourceTree = "<group>"; };
 		ADD764AA221DF0B800ED8B0D /* UW-RateEm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UW-RateEm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD764AD221DF0B800ED8B0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD764AF221DF0B800ED8B0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +113,9 @@
 		ADD764C2221DF36000ED8B0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCF48B221E297D00DE3A66 /* Assignment.swift */,
+				ADCCF48D221E29EE00DE3A66 /* ClassInfo.swift */,
+				ADCCF48F221E2A7D00DE3A66 /* Semester.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +133,8 @@
 				ADD764C5221DF83F00ED8B0D /* LoginMenuViewController.swift */,
 				ADD764C7221DF87600ED8B0D /* SignUpViewController.swift */,
 				ADD764C9221DF8A500ED8B0D /* SignInViewController.swift */,
+				AD2F54D9221E18F5009001FC /* HomeScreenViewController.swift */,
+				AD0BE3CB221F180100A9010A /* UserSettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,10 +267,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD764C6221DF83F00ED8B0D /* LoginMenuViewController.swift in Sources */,
+				ADCCF490221E2A7D00DE3A66 /* Semester.swift in Sources */,
+				ADCCF48C221E297D00DE3A66 /* Assignment.swift in Sources */,
 				ADD764B0221DF0B800ED8B0D /* ViewController.swift in Sources */,
 				ADD764C8221DF87600ED8B0D /* SignUpViewController.swift in Sources */,
+				ADCCF48E221E29EE00DE3A66 /* ClassInfo.swift in Sources */,
+				AD0BE3CC221F180100A9010A /* UserSettingsViewController.swift in Sources */,
 				ADD764CA221DF8A500ED8B0D /* SignInViewController.swift in Sources */,
 				ADD764AE221DF0B800ED8B0D /* AppDelegate.swift in Sources */,
+				AD2F54DA221E18F5009001FC /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
