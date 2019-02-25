@@ -26,4 +26,20 @@ struct Semester: Comparable{
     }
     var term: Term
     var year: Int
+    
+    func toString() -> String{
+        var semesterString = ""
+        switch term {
+        case .spring:
+            semesterString.append("Spring ")
+        case .fall:
+            semesterString.append("Fall ")
+        case .summer:
+            semesterString.append("Summer ")
+        default:
+            return ""
+        }
+        semesterString.append(String(year))
+        return semesterString
+    }
 }

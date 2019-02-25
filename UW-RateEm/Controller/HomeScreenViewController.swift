@@ -18,6 +18,10 @@ class HomeScreenViewController: UIViewController{
         super.viewDidLoad()
         usernameLabel.text = Auth.auth().currentUser?.displayName
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        usernameLabel.text = Auth.auth().currentUser?.displayName
+    }
     
     @IBAction func logOutButtonTapped(_ sender: Any) {
         try! Auth.auth().signOut()

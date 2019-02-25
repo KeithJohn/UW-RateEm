@@ -35,6 +35,13 @@ class SignUpViewController: UIViewController {
                 changeRequest?.commitChanges{ error in
                     if error == nil {
                         print("User display name changed: \(changeRequest!.displayName ?? "Error")")
+                        
+                        //TODO: Add to database
+                        let ref = Database.database().reference().child("Users").childByAutoId()
+                        ref.child("username").setValue(username)
+                        ref.child("password").setValue(password)
+                        ref.child("email").setValue(email)
+                        ref.child("courses")
                         if let navController = self.navigationController{
                             print("pop controller")
                             navController.popViewController(animated: true)

@@ -30,7 +30,6 @@ struct ClassInfo {
                     let courseName = courseInfo["courseName"] as! String
                     
                     //Get course assignments
-                    //TODO: Fix this
                     var assignments:[Assignment] = []
                     Database.database().reference().child("Assignments").queryOrdered(byChild: "classCode").queryEqual(toValue: course.key).observeSingleEvent(of: .value, with: { (assignmentSnapshot) in
                         let assignmentEnumerator = assignmentSnapshot.children
@@ -39,7 +38,6 @@ struct ClassInfo {
                                 assignments.append(assignmentInfo)
                             }
                         }
-                    })
 
                     //Get course semester
                     var semester:Semester? = nil
@@ -62,10 +60,12 @@ struct ClassInfo {
                     //Create class object and append to course array
                     let class1 = ClassInfo.init(classCode: course.key, className: courseName, semester: semester!, assignments: assignments, description: courseDescription)
                     courses.append(class1)
+                    //completion return
+                    completion(courses)
+                })
                 }
             }
-            //completion return
-            completion(courses)
+
         }
     }
 }
